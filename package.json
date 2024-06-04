@@ -1,0 +1,87 @@
+{
+	"name": "@ctx-core/web_animation",
+	"version": "0.1.0",
+	"description": "ctx-core web_animation api",
+	"keywords": [
+		"ctx-core",
+		"web animation",
+		"rmemo",
+		"reactive",
+		"state management",
+		"reactive state management",
+		"memo",
+		"reactive memo",
+		"signal",
+		"reactive signal"
+	],
+	"homepage": "https://github.com/ctx-core/web_animation#readme",
+	"bugs": {
+		"url": "https://github.com/ctx-core/web_animation/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ctx-core/web_animation.git"
+	},
+	"license": "Apache-2.0",
+	"author": {
+		"name": "Brian Takita",
+		"url": "https://briantakita.me",
+		"email": "info+web_animation@briantakita.me"
+	},
+	"type": "module",
+	"types": "./index.d.ts",
+	"exports": {
+		".": "./index.js",
+		"./package.json": "./package.json"
+	},
+	"scripts": {
+		"build": ":",
+		"clean": ":",
+		"exec": "$@",
+		"prepublishOnly": "pnpm clean && pnpm build",
+		"test": "pnpm run /^test:/",
+		"test:size": "size-limit",
+		"test:type": "check-dts",
+		"test:unit": "tsx node_modules/uvu/bin.js . '\\.test\\.(ts|js)$'",
+		"disable:test:coverage": "c8 pnpm test:unit"
+	},
+	"dependencies": {
+		"ctx-core": "^7.2.15"
+	},
+	"devDependencies": {
+		"@size-limit/preset-small-lib": "^11.1.4",
+		"c8": "^9.1.0",
+		"check-dts": "^0.8.0",
+		"size-limit": "^11.1.4",
+		"tsx": "^4.11.2",
+		"typescript": "next",
+		"uvu": "^0.5.6"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"sideEffects": false,
+	"size-limit": [
+		{
+			"name": "wanimato",
+			"import": {
+				".": "{ wanimato__new }"
+			},
+			"limit": "394 B"
+		},
+		{
+			"name": "wanimato + memo_ + sig_",
+			"import": {
+				".": "{ wanimato__new, memo_ }"
+			},
+			"limit": "706 B"
+		},
+		{
+			"name": "wanimato + memo_ + sig_",
+			"import": {
+				".": "{ wanimato__new, memo_, sig_ }"
+			},
+			"limit": "737 B"
+		}
+	]
+}
