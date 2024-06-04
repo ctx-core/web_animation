@@ -82,6 +82,13 @@
 				".": "{ wanimato__new, memo_, sig_ }"
 			},
 			"limit": "737 B"
+		},
+		{
+			"name": "wanimato + memo_ + sig_ + ctx_ + be_ + be_memo_pair_ + be_sig_triple_ + calling + memo_ + nullish__none_ + ref__bind + rmemo__wait + tup",
+			"import": {
+				".": "{ wanimato__new, memo_, sig_, ctx_, be_, be_memo_pair_, be_sig_triple_, calling, nullish__none_, ref__bind, rmemo__wait, tup }"
+			},
+			"limit": "1214 B"
 		}
 	]
 }
