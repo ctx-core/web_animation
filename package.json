@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/web_animation",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "ctx-core web_animation api",
 	"keywords": [
 		"ctx-core",
@@ -46,7 +46,7 @@
 		"disable:test:coverage": "c8 pnpm test:unit"
 	},
 	"dependencies": {
-		"ctx-core": "^7.2.15"
+		"ctx-core": "^7.2.16"
 	},
 	"devDependencies": {
 		"@size-limit/preset-small-lib": "^11.1.4",
