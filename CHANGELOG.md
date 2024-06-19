@@ -1,5 +1,11 @@
 # @ctx-core/web_animation
 
+## 0.1.7
+
+### Patch Changes
+
+- ctx-core: ^7.2.21 -> ^7.2.22
+
 ## 0.1.6
 
 ### Patch Changes
