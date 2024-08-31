@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/web_animation",
-	"version": "0.1.15",
+	"version": "0.1.16",
 	"description": "ctx-core web_animation api",
 	"keywords": [
 		"ctx-core",
@@ -46,14 +46,14 @@
 		"disable:test:coverage": "c8 pnpm test:unit"
 	},
 	"dependencies": {
-		"ctx-core": "^7.2.30"
+		"ctx-core": "^7.2.31"
 	},
 	"devDependencies": {
 		"@size-limit/preset-small-lib": "^11.1.4",
 		"c8": "^10.1.2",
-		"check-dts": "^0.8.0",
+		"check-dts": "^0.8.2",
 		"size-limit": "^11.1.4",
-		"tsx": "^4.17.0",
+		"tsx": "^4.19.0",
 		"typescript": "next",
 		"uvu": "^0.5.6"
 	},
