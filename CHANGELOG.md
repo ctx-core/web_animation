@@ -1,5 +1,13 @@
 # @ctx-core/web_animation
 
+## 0.1.19
+
+### Patch Changes
+
+- chore: migrate scripts from pnpm to bun
+- Updated dependencies
+  - ctx-core@7.2.34
+
 ## 0.1.18
 
 ### Patch Changes
